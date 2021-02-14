@@ -1,0 +1,41 @@
+.collectionPhotos{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,20vw);
+    grid-auto-rows: 35vh;
+    grid-gap: 1 rem;
+    /* background-color: rgb(255, 247, 247); */
+    background-color: rgb(252, 250, 250);
+    border-radius: 4px;
+}
+.photo{
+    height: 30vh;
+    width: 95%;
+    object-fit: contain;
+    margin: 0.3em;
+    
+}
+@media only screen and (max-width : 1300px){
+    .collectionPhotos{
+        grid-template-columns: repeat(4,25vw);
+
+    }
+}
+@media only screen and (max-width : 1000px){
+    .collectionPhotos{
+        grid-template-columns: repeat(3,33vw);
+
+    }
+}
+@media only screen and (max-width : 680px){
+    .collectionPhotos{
+        grid-template-columns: repeat(2,50vw);
+
+    }
+}
+@media only screen and (max-width : 500px){
+    .collectionPhotos{
+        grid-template-columns: repeat(1,100vw);
+
+    }
+}
